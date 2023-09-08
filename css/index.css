@@ -1,0 +1,85 @@
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.button-container {
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    height:1000px;
+}
+
+.top-layer{
+    display:flex;
+    flex-direction:column;
+    color:white;
+    background-color: grey;
+}
+
+.header{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 100px;
+}
+
+#results{
+    padding:100px;
+    display:flex;
+    flex-direction:column;
+    text-align: center;
+}
+
+#visual-result{
+    display:flex;
+    gap:200px;
+}
+
+#player-image, #computer-image{
+    background-color:rgb(209, 205, 205);
+    border-radius: 50%;
+}
+
+/* Button from https://getcssscan.com/css-buttons-examples */
+#buttons #rock, #paper, #scissor{
+    --b: 3px;   /* border thickness */
+  --s: .45em; /* size of the corner */
+  --color: #373B44;
+  
+  padding: calc(.5em + var(--s)) calc(.9em + var(--s));
+  color: var(--color);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .6em;
+  font-size: 16px;
+
+  border: 0;
+
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+#buttons #rock:hover, #paper:hover, #scissor:hover {
+    --_p: 0px;
+    outline-color: var(--color);
+    outline-offset: .05em;
+}
+
+#buttons #rock:active, #paper:active, #scissor:active {
+    background: var(--color);
+  color: #fff;
+}
+

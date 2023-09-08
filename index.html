@@ -1,11 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="./css/index.css">
     <title>Document</title>
 </head>
+
 <body>
-    <script src="index.js"></script>
+    <div class="top-layer">
+        <div class="header">
+            <div class="logo">
+                ROCK PAPER SCISSOR
+            </div>
+        </div>
+    </div>
+
+    <div class="button-container">
+        <div id="results">
+            <div id="text-result"></div>
+            <div id="visual-result">
+                <img id="player-image" src="./images/questionMark.png">
+                <img id="computer-image" src="./images/questionMark.png">
+                <!-- <img id ="scissor-image" src="./images/scissor.png"> -->
+                <!-- <div class = "player-choice"></div>
+                <div class = "computer-choice"></div> -->
+
+
+            </div>
+        </div>
+        <div id="score"></div>
+
+        <div id="buttons">
+            <button id="rock">
+                <div><img src="./images/rock.png" width="200px"> </div>
+                <div>Rock</div>
+            </button>
+            <button id="paper">
+                <div><img src="./images/paper.png" width="200px"> </div>
+                <div>Paper</div>
+            </button>
+            <button id="scissor">
+                <div><img src="./images/scissor.png" width="176.5px"> </div>
+                <div>Scissor</div>
+            </button>
+        </div>
+
+    </div>
+
+
+
 </body>
+
 </html>
