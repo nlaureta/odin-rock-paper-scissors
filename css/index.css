@@ -2,12 +2,15 @@ html,
 body {
     padding: 0;
     margin: 0;
+    font-family: Fantasy;
+    font-size: 30px;
 }
 
 body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: rgb(170, 170, 170);
 }
 
 .button-container {
@@ -48,6 +51,23 @@ body {
     border-radius: 50%;
 }
 
+#restartButton button{
+    background-color: orange;
+    border-color: #0000;
+    border-radius: 50px;
+    padding:10px;
+    margin-bottom: 10px;
+    font-family: Fantasy;
+    color:white;
+    font-size:20px;
+}
+
+#restartButton button:hover{
+    background-color: rgb(153, 99, 0);
+    color:rgb(167, 167, 167);
+  
+}
+
 /* Button from https://getcssscan.com/css-buttons-examples */
 #buttons #rock, #paper, #scissor{
     --b: 3px;   /* border thickness */
@@ -80,6 +100,12 @@ body {
 
 #buttons #rock:active, #paper:active, #scissor:active {
     background: var(--color);
-  color: #fff;
+    color: #fff;
 }
 
+#buttons #rock:disabled, #paper:disabled, #scissor:disabled {
+    outline-color: rgb(209, 209, 209);
+    outline-offset: 0;
+    background: rgb(209, 209, 209);
+    color: #c2c2c2;
+}

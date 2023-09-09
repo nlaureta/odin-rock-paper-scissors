@@ -20,18 +20,23 @@
 
     <div class="button-container">
         <div id="results">
+            <div id="win-lose-text"></div>
             <div id="text-result"></div>
             <div id="visual-result">
-                <img id="player-image" src="./images/questionMark.png">
-                <img id="computer-image" src="./images/questionMark.png">
-                <!-- <img id ="scissor-image" src="./images/scissor.png"> -->
-                <!-- <div class = "player-choice"></div>
-                <div class = "computer-choice"></div> -->
-
+                <div class="playerImage-container">
+                    <div><img id="player-image" src="./images/questionMark.png"></div>
+                    <div class="playerScore">Player: 0</div>
+                </div>
+                <div class="computerImage-container">
+                    <div><img id="computer-image" src="./images/questionMark.png"></div>
+                    <div class="computerScore">Computer: 0</div>
+                </div>
 
             </div>
         </div>
-        <div id="score"></div>
+
+        <div id="middleText"></div>
+        <div id="restartButton"></div>
 
         <div id="buttons">
             <button id="rock">
@@ -47,11 +52,7 @@
                 <div>Scissor</div>
             </button>
         </div>
-
     </div>
-
-
-
 </body>
 
 </html>
